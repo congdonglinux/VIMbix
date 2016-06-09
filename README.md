@@ -21,6 +21,9 @@ How it works
 ------------
 On a configured frequency, VIMbix query multiple VIServers (vCenter and/or ESX(i)) discover all virtual machines, datastores and hosts and build a dump file of all collected informations for each VIServers. This method prevent high load on large **VMware**  Virtual Infrastructure. Collected data are accessible through the **VMbix** RESTfull API. Collected informations and supported method are :
 
+Cli Get e.g: curl http://zabbixserver.local/exi-01.local/virtualmachines
+
+
 |  | Method                               | Description                           |
 |:--:|:------------------------------------ |:------------------------------------- |
 |[GET]|/:viserver/api/status          | VIMbix API VIServer last check status |

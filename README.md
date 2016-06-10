@@ -104,7 +104,7 @@ Installation and configuration
 2. Install **VIMbix** in the **ExternalScripts** directory of your Zabbix server and/or proxy. Check your `zabbix_server.conf` and/or `zabbix_proxy.conf` if in doubt
 
   ```
-  git clone https://github.com/jjmartres/VIMbix.git
+  git clone https://github.com/richardsonlima/VIMbix/VIMbix.git
   ```
 3. Install dependencies
 
@@ -159,7 +159,7 @@ Installation and configuration
   ```
 
 8. Import **zbx-vimbix.xml** file into Zabbix
-9. Add to your host the followed macro with value **{$VIMBIX\_ADDRESS}** and **{$VIMBIX\_PORT}** (default value is 9090)
+9. Add to your host the followed macro with value **{$VIMBIX\_ADDRESS}**  (default value is 127.0.0.1) and **{$VIMBIX\_PORT}** (default value is 9090)
 10. Associate **ZBX-VIMBIX** template to your VIServer on Zabbix
 
 
@@ -184,6 +184,7 @@ rake version             # Show VIMbix version
 
 ```
 vimbix-client -u <vimbix-restfull-uri>
+e.g: vimbix-client -u http://zabbixserver.local/exi-01.local/virtualmachines
 ```
 
 Zabbix template
@@ -307,15 +308,16 @@ This script require Bundler 1.3 or higher.
 
 Support
 -------
-Please do not send me an email for support on **VIMbix**. Open an [issue](https://github.com/jjmartres/VIMbix/issues/new) on Github.
+Please do not send me an email for support on **VIMbix**. Open an [issue](https://github.com/richardsonlima/VIMbix/issues/new) on Github.
 
 Development
 -----------
-Fork the project on Github and send me a merge request, or send a patch to jjmartres@gmail.com.
+Fork the project on Github and send me a merge request, or send a patch to contatorichardsonlima@gmail.com.
+Forked from  jjmartres/VIMbix
 
 Version
 -------
-Please see [VERSION](https://github.com/jjmartres/VIMbix/blob/master/VERSION) file or use the rake task :
+Please see [VERSION](https://github.com/richardsonlima/VIMbix/blob/master/VERSION) file or use the rake task :
 
 ```
 rake  version
@@ -327,9 +329,12 @@ This script is distributed under the terms of the GNU General Public License as 
 
 ### Copyright
 
-  Copyright (c) Jean-Jacques Martrès
+  Copyright (c) Jean-Jacques Martrès  
 
 ### Authors
 
   Jean-Jacques Martrès
   (jjmartres |at| gmail |dot| com)
+  
+  Richardson Lima
+  (contatorichardsonlima |at| gmail |dot| com)
